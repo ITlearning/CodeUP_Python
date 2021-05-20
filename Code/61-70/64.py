@@ -1,7 +1,6 @@
-a,b,c = input().split()
-c = int(a)
-d = int(b)
-e = int(c)
-x = [c,d,e]
-z = sorted(x)
-print(z[0])
+c,d,e = input().split()
+a = int(c)
+b = int(d)
+c = int(e)
+
+print((a if a < b else b) if ((a if a < b else b) < c)else c)
